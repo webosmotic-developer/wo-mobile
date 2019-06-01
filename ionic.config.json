@@ -1,5 +1,7 @@
 {
   "name": "webosmotic",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

@@ -1,0 +1,188 @@
+<ion-header>
+    <ion-toolbar text-center>
+        <ion-title text-center>Technologies</ion-title>
+    </ion-toolbar>
+    <div >
+
+    </div>
+</ion-header>
+<ion-content>
+    <ion-segment (ionChange)="segmentChanged($event)" scrollable color="secondary">
+        <ion-segment-button value="java" checked>
+            <ion-label>Java</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="javascript">
+            <ion-label>Javascript</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="design">
+            <ion-label>Design</ion-label>
+        </ion-segment-button>
+    </ion-segment>
+    <ion-content>
+    <!---------------------------------| Java Segment |--------------------------------------->
+    <div *ngIf="activeTab === 'java'">
+        <ion-grid>
+            <ion-row text-center>
+                <ion-col size="6" size-sm="4" margin-bottom>
+                    <ion-card padding>
+                        <img src="assets/technologies/java/java.png"/>
+                    </ion-card>
+                </ion-col>
+
+                <ion-col size="6" size-sm="4" margin-bottom>
+                    <ion-card padding>
+                        <img src="assets/technologies/java/j2ee.png"/>
+                    </ion-card>
+                </ion-col>
+
+                <ion-col size="6" size-sm="4" margin-bottom>
+                    <ion-card padding>
+                        <img src="assets/technologies/java/gwt.png"/>
+                    </ion-card>
+                </ion-col>
+
+                <ion-col size="6" size-sm="4" margin-bottom>
+                    <ion-card padding>
+                        <img src="assets/technologies/java/gae.png"/>
+                    </ion-card>
+                </ion-col>
+
+                <ion-col size="6" size-sm="4" margin-bottom>
+                    <ion-card padding>
+                        <img src="assets/technologies/java/spring.png"/>
+                    </ion-card>
+                </ion-col>
+
+                <ion-col size="6" size-sm="4" margin-bottom>
+                    <ion-card padding>
+                        <img src="assets/technologies/java/hibernate.png"/>
+                    </ion-card>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
+
+    <!------------------------------------------------------------------------------------------>
+
+    <!---------------------------------| Javascript Segment |--------------------------------------->
+    <div *ngIf="activeTab === 'javascript'">
+        <ion-grid>
+            <ion-row text-center>
+                <ion-col size="6" size-sm="4" margin-bottom>
+                    <ion-card padding>
+                        <img src="assets/technologies/javascript/jquery.png"/>
+                    </ion-card>
+                </ion-col>
+
+                <ion-col size="6" size-sm="4" margin-bottom>
+                    <ion-card padding>
+                        <img src="assets/technologies/javascript/angular.png"/>
+                    </ion-card>
+                </ion-col>
+
+                <ion-col size="6" size-sm="4" margin-bottom>
+                    <ion-card padding>
+                        <img src="assets/technologies/javascript/react.png"/>
+                    </ion-card>
+                </ion-col>
+
+                <ion-col size="6" size-sm="4" margin-bottom>
+                    <ion-card padding>
+                        <img src="assets/technologies/javascript/d3.png"/>
+                    </ion-card>
+                </ion-col>
+
+                <ion-col size="6" size-sm="4" margin-bottom>
+                    <ion-card padding>
+                        <img src="assets/technologies/javascript/mean.png"/>
+                    </ion-card>
+                </ion-col>
+
+                <ion-col size="6" size-sm="4" margin-bottom>
+                    <ion-card padding>
+                        <img src="assets/technologies/javascript/node.png"/>
+                    </ion-card>
+                </ion-col>
+
+                <ion-col size="6" size-sm="4" margin-bottom>
+                    <ion-card padding>
+                        <img src="assets/technologies/javascript/backbone.png"/>
+                    </ion-card>
+                </ion-col>
+
+                <ion-col size="6" size-sm="4" margin-bottom>
+                    <ion-card padding>
+                        <img src="assets/technologies/javascript/meteor.png"/>
+                    </ion-card>
+                </ion-col>
+
+                <ion-col size="6" size-sm="4" margin-bottom>
+                    <ion-card padding>
+                        <img src="assets/technologies/javascript/typescript.png"/>
+                    </ion-card>
+                </ion-col>
+
+                <ion-col size="6" size-sm="4" margin-bottom>
+                    <ion-card padding>
+                        <img src="assets/technologies/javascript/coffeescript.png"/>
+                    </ion-card>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
+
+    <!------------------------------------------------------------------------------------------>
+
+    <!---------------------------------| Design Segment |--------------------------------------->
+    <div *ngIf="activeTab === 'design'">
+        <ion-grid>
+            <ion-row text-center>
+                <ion-col size="6" size-sm="4" margin-bottom>
+                    <ion-card padding>
+                        <img src="assets/technologies/design/angular-material.png"/>
+                    </ion-card>
+                </ion-col>
+
+                <ion-col size="6" size-sm="4" margin-bottom>
+                    <ion-card padding>
+                        <img src="assets/technologies/design/html5.png"/>
+                    </ion-card>
+                </ion-col>
+
+                <ion-col size="6" size-sm="4" margin-bottom>
+                    <ion-card padding>
+                        <img src="assets/technologies/design/css3.png"/>
+                    </ion-card>
+                </ion-col>
+
+                <ion-col size="6" size-sm="4" margin-bottom>
+                    <ion-card padding>
+                        <img src="assets/technologies/design/sass.png"/>
+                    </ion-card>
+                </ion-col>
+
+                <ion-col size="6" size-sm="4" margin-bottom>
+                    <ion-card padding>
+                        <img src="assets/technologies/design/less.png"/>
+                    </ion-card>
+                </ion-col>
+
+                <ion-col size="6" size-sm="4" margin-bottom>
+                    <ion-card padding>
+                        <img src="assets/technologies/design/bootstrap.png"/>
+                    </ion-card>
+                </ion-col>
+
+                <ion-col size="6" size-sm="4" margin-bottom>
+                    <ion-card padding>
+                        <img src="assets/technologies/design/materialize.png"/>
+                    </ion-card>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
+
+    <!------------------------------------------------------------------------------------------>
+
+    </ion-content>
+</ion-content>

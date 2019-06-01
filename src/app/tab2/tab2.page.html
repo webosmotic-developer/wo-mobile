@@ -1,9 +1,25 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Tab Two
-    </ion-title>
+  <ion-toolbar text-center >
+    <ion-title text-center>Services</ion-title>
   </ion-toolbar>
 </ion-header>
+<ion-content class="bg-image no-scroll">
+<ion-list>
+  <div *ngFor="let service of servicesArr;let i=index" >
+  <ion-item lines="full" (click)="managerAccordian(i)">
+    <ion-thumbnail slot="start">
+      <ion-button size="medium" fill="outline" >
+        <ion-icon   name="{{service.icon}}"></ion-icon>
+      </ion-button>
+    </ion-thumbnail>
+    <ion-text margin-bottom>{{service.title}}</ion-text>
+    <ion-icon slot="end" name="{{serviceAccordian[i]?.isOpen === 'true' ? 'arrow-dropdown' : 'arrow-dropright'}}"></ion-icon>
+  <hr>
+  </ion-item>
+    <ion-item *ngIf="serviceAccordian[i]?.isOpen === 'true'">
+      <ion-text padding text-justify><small>{{service.description}}</small></ion-text>
+    </ion-item>
+  </div>
+</ion-list>
 
-<ion-content></ion-content>
+</ion-content>
