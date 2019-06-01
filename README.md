@@ -12,5 +12,3 @@ from root directory.
 ## Note
 - No custom css has been added as it developed with pure ionic components.
 
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
